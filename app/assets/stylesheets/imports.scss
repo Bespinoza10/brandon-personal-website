@@ -1,0 +1,13 @@
+$azul:#374056;
+$verde: #69d6b0;
+$amarillo: #f3c91b;
+$gris: #ededed;
+
+@import "materialize/components/color";
+@import "materialize";
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
