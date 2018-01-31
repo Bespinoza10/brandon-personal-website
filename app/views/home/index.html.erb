@@ -16,13 +16,15 @@
 
 <div class="row" id="projects">
   <div class="container">
+    <h1>My Work</h1>
     <% @projects.each do |p|%>
   
       <div class="col s12 m6 l6">
-        <h3><%= p.title %></h3>
+        <h3><%= link_to p.title, p %></h3>
         <p><%= p.description %></p>
       </div>
   
     <%end%>
+    <%= link_to "New project", new_project_path, class: "btn btn-default btn-new-project" %>
   </div>
 </div>

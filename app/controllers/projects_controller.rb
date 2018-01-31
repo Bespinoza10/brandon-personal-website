@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-
+  before_action :find_project, only: [:show, :edit, :update, :destroy]
   def index
   end
 
@@ -44,6 +44,6 @@ class ProjectsController < ApplicationController
   end
 
   def find_project
-    @project = project.find(params[:id])
+    @project = Project.find(params[:id])
   end
 end
