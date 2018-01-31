@@ -20,6 +20,7 @@
     <% @projects.each do |p|%>
   
       <div class="col s12 m6 l6">
+        <%= image_tag p.project_image.url(:medium) %>
         <h3><%= link_to p.title, p %></h3>
         <p><%= p.description %></p>
       </div>
