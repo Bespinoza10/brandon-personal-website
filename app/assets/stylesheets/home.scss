@@ -1,0 +1,31 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "imports";
+body{
+  color: $azul;
+}
+p{
+  font-size: 16px;
+}
+header{
+  height: 100vh;
+  width: 100%;
+  background: #fff;
+  .bg-text{
+    h1{
+      color: $azul;
+      span{
+        color: $amarillo;
+      }
+    }
+    .aboutme{
+      p{
+        letter-spacing: 1px;
+        strong{
+          color: $amarillo;
+        }
+      }
+    }
+  }
+}
