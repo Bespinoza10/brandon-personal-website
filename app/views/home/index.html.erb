@@ -13,3 +13,16 @@
     </div> 
   </div>
 </header>
+
+<div class="row" id="projects">
+  <div class="container">
+    <% @projects.each do |p|%>
+  
+      <div class="col s12 m6 l6">
+        <h3><%= p.title %></h3>
+        <p><%= p.description %></p>
+      </div>
+  
+    <%end%>
+  </div>
+</div>
