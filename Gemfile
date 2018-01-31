@@ -35,7 +35,7 @@ gem "font-awesome-rails"
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 #Paperclip for image uploading
-gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem "paperclip", "~> 5.2.1"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
