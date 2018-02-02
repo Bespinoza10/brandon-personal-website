@@ -10,12 +10,12 @@
         </ul>
       <%end%>
       <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s12 m6">
           <%= f.text_field :title, {class: 'validate'}%>
           <label>Project Title:</label>
         </div>
 
-        <div class="input-field col s12">
+        <div class="input-field col s12 m4">
           <div class="file-field input-field">
             <div class="btn">
               <span>Image</span>
@@ -30,6 +30,27 @@
         <div class="input-field col s12">
           <%= f.text_area :description, {class: 'validate materialize-textarea'}%>
           <label>Project Description</label>
+        </div>
+
+        <div class="input-field col s12 m6">
+          <%= f.text_field :role, {class: 'validate'}%>
+          <label>Project Roles:</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <%= f.text_field :languages, {class: 'validate'}%>
+          <label>Project Languages:</label>
+        </div>
+        <div class="input-field col s12">
+          <%= f.text_field :responsibilities, {class: 'validate'}%>
+          <label>Project Responsibilities:</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <%= f.text_field :project_link, {class: 'validate'}%>
+          <label>Project's Web Link:</label>
+        </div>
+        <div class="input-field col s12">
+          <%= f.text_field :other_link, {class: 'validate'}%>
+          <label>Project's other links:</label>
         </div>
       </div>
       <button class="btn waves-effect waves-light orange" type="submit" name="action">Save
