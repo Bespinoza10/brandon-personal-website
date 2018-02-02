@@ -11,22 +11,27 @@ p{
 header{
   height: 100vh;
   width: 100%;
-  background: $azul;
+  background: $amarillo;
   .bg-text{
     h1{
-      color: #fff;
+      color:$azul;
       span{
-        color: $verde;
+        color: #fff;
       }
     }
     p{
       letter-spacing: 2px;
-      color: #fff;
+      color: $azul;
       strong{
-        color: $verde;
+        color: #fff;
       } strong.name{
-        color: $amarillo;
+        color: #fff;
       }
     }
   }
+}
+
+
+.project-bg{
+  background-color: #333333
 }

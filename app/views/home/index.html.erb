@@ -8,7 +8,7 @@
            I am very passionate about my work, every project is a new opportunity to create something captivating, unique, helpful, and useful. 
            I focus on every <strong>little</strong> detail. To always give you the best experience, I use the latest web technologies to develop your project.
         </p>
-        <p>I am currently available for hire, full-time or freelance.</p>
+        <p>I am available for hire, full-time or freelance.</p>
       </div> 
     </div> 
   </div>
@@ -20,9 +20,17 @@
     <% @projects.each do |p|%>
   
       <div class="col s12 m6 l6">
-        <%= image_tag p.project_image.url(:medium) %>
-        <h3><%= link_to p.title, p %></h3>
-        <p><%= p.description %></p>
+        <div class="card projects-bg" style="background-image: url(<%= p.project_image %>); 
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;">
+          <div class="card-content white-text">
+            <span class="card-title"><%= link_to p.title, p %></span>
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+        </div>
       </div>
   
     <%end%>
