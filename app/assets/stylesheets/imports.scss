@@ -6,8 +6,8 @@ $gris: #ededed;
 @import "materialize/components/color";
 @import "materialize";
 @mixin transition($transition...) {
-  -moz-transition:    $transition;
-  -o-transition:      $transition;
-  -webkit-transition: $transition;
-  transition:         $transition;
+  -moz-transition:    $transition !important;
+  -o-transition:      $transition !important;
+  -webkit-transition: $transition !important;
+  transition:         $transition !important;
 }

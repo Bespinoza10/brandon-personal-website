@@ -2,7 +2,7 @@
   <div class="row">
     <div class="container">
       <div class="col s12 m10 l10 center-column bg-text">
-        <h1><strong>Hello<span>,</span></strong></h1>
+        <h1>Hello<strong><span>,</span></strong></h1>
         <p>I am <strong class="name"> Brandon Espinoza</strong>, a <strong>Web Designer</strong>, and <strong>Developer</strong> living in the Nashville, TN Area.
            I do all kinds of work such as <strong>Web</strong> and <strong>Graphic Design</strong>, <strong>Web-Based Applications</strong>, and <strong>Windows Desktop Applications</strong>. 
            I am very passionate about my work, every project is a new opportunity to create something captivating, unique, helpful, and useful. 
@@ -16,19 +16,24 @@
 
 <div class="row" id="projects">
   <div class="container">
-    <h1>My Work</h1>
+    <div class="col s12 title-container">
+      <h1 class="header-title">My Work</h1>
+      <p>You like what you see? Hire me.</p>
+    </div>
     <% @projects.each do |p|%>
   
-      <div class="col s12 m6 l6">
-        <div class="card projects-bg" style="background-image: url(<%= p.project_image %>); 
-        background-repeat: no-repeat;
-        background-attachment: scroll;
-        background-position: center;
-        background-size: cover;">
-          <div class="card-content white-text">
+      <div class="col s12 m12 l5 offset-l1 projects">
+        <div class="card project-cards">
+          <div class="card-image">
+            <img src="<%= p.project_image %>">
+            
+          </div>
+          <div class="card-content" style="background-color: <%= p.other_link %>">
             <span class="card-title"><%= link_to p.title, p %></span>
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
+            <p><%= p.description %></p>
+          </div>
+          <div class="card-action" style="background-color: <%= p.other_link %>">
+            <a href="<%=p.project_link %>" target="_blank"><%=p.project_link %></a>
           </div>
         </div>
       </div>

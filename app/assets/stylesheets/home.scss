@@ -4,6 +4,15 @@
 @import "imports";
 body{
   color: $azul;
+  font-family: 'Montserrat', sans-serif;
+}
+strong{
+  font-weight: 700 !important;
+}
+.header-title{
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
 }
 p{
   font-size: 18px;
@@ -11,27 +20,26 @@ p{
 header{
   height: 100vh;
   width: 100%;
-  background: $amarillo;
+  background: $azul;
   .bg-text{
     h1{
-      color:$azul;
+      color:#fff;
+      font-weight: 700;
+      letter-spacing: 1px;
       span{
-        color: #fff;
+        color: $verde;;
       }
     }
     p{
       letter-spacing: 2px;
-      color: $azul;
+      color: #fff;
+      font-weight: 400;
       strong{
-        color: #fff;
+        color: $verde;
       } strong.name{
-        color: #fff;
+        color: $verde;
+        font-weight: 700;
       }
     }
   }
-}
-
-
-.project-bg{
-  background-color: #333333
 }
